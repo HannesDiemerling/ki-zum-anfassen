@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Station 2 „Sprechen“: Was leistet ein Chatbot – und wo braucht es Sie?">
+<meta name="theme-color" content="#23508e">
+<title>Station 2 · „Sprechen“ – Stresstest für den Chatbot</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body class="st2" data-page="2">
+
+<header class="hero" data-big="2">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="index.html"><span data-icon="chip"></span>KI zum Anfassen</a>
+      <button class="share" type="button"></button>
+    </div>
+    <div class="head">
+      <span class="num" data-icon="speech"></span>
+      <div><div class="kicker">Station 2 · „Sprechen“</div><h1>Stresstest für den Chatbot</h1></div>
+    </div>
+    <p class="lead">Was leistet ein Chatbot – und wo braucht es Sie?</p>
+    <div class="pills">
+      <span class="pill"><span data-icon="clock"></span>5–10 Min.</span>
+      <span class="pill"><span data-icon="people"></span>1–3 Personen</span>
+      <span class="pill"><span data-icon="lock"></span>Gespräche werden gelöscht</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="reveal">
+    <h2>So geht's</h2>
+    <ol class="steps">
+      <li>Wählen Sie in der Kabine einen von vier Tests.</li>
+      <li>Mikrofon gedrückt halten und sprechen – oder tippen.</li>
+      <li>Prüfen Sie das Ergebnis: Würden Sie es so verwenden?</li>
+    </ol>
+  </section>
+
+  <section class="reveal">
+    <h2>Vier Tests</h2>
+    <div class="modes">
+      <div><b>1</b>Entlasten<br><span class="small muted">Wobei hilft KI?</span></div>
+      <div><b>2</b>Faktencheck<br><span class="small muted">Stimmt, was plausibel klingt?</span></div>
+      <div><b>3</b>Beratung<br><span class="small muted">Klingt empathisch – ist es das?</span></div>
+      <div><b>4</b>Bias-Test<br><span class="small muted">Verändert ein Name das Ergebnis?</span></div>
+    </div>
+    <div class="soft" style="margin-top:12px"><b>Kabine besetzt?</b> Schauen Sie später wieder vorbei – oder testen Sie gleich hier Ihr Gespür im Quiz.</div>
+  </section>
+
+  <section class="reveal quiz" id="quiz">
+    <h2>Quiz: Wie gut ist Ihr Gespür?</h2>
+    <div class="quiz-intro">
+      <span class="badge" data-icon="quiz"></span>
+      <p>Sechs kurze Fragen rund um Chatbots. Ihre Antworten bleiben auf Ihrem Handy und werden nicht gespeichert.</p>
+    </div>
+    <div class="progress"><span></span></div>
+    <div class="progress-label"></div>
+
+    <div class="qq" data-answer="a">
+      <div class="qn"></div>
+      <p class="q">Echt oder ausgedacht? „Das Drei-Säulen-Modell der Resilienzberatung nach Hartwig Velden (2017).“</p>
+      <div class="btns"><button type="button" data-a="e">Echt</button><button type="button" data-a="a">Ausgedacht</button></div>
+      <div class="res">Ausgedacht – Modell und Autor gibt es nicht. Unser Sprachmodell beschrieb trotzdem ausführlich drei „Säulen“.</div>
+    </div>
+
+    <div class="qq" data-answer="b">
+      <div class="qn"></div>
+      <p class="q">Was macht ein Sprachmodell, wenn es die Antwort auf eine Frage nicht „weiß“?</p>
+      <div class="opts">
+        <button type="button" data-a="a">Es sagt zuverlässig: „Das weiß ich nicht.“</button>
+        <button type="button" data-a="b">Es erzeugt oft trotzdem eine plausible Antwort.</button>
+        <button type="button" data-a="c">Es schlägt automatisch in einem Lexikon nach.</button>
+      </div>
+      <div class="res">Ein Sprachmodell setzt Text wahrscheinlich fort, statt Wissen nachzuschlagen. Deshalb klingt auch Falsches überzeugend. Keine Absicht, sondern eine Eigenschaft der Technik.</div>
+    </div>
+
+    <div class="qq" data-answer="e">
+      <div class="qn"></div>
+      <p class="q">Echt oder ausgedacht? „§ 8a SGB VIII regelt den Schutzauftrag bei Kindeswohlgefährdung.“</p>
+      <div class="btns"><button type="button" data-a="e">Echt</button><button type="button" data-a="a">Ausgedacht</button></div>
+      <div class="res">Echt. Bei gut dokumentiertem Wissen sind die Antworten von Sprachmodellen meist brauchbar – Details lohnt es trotzdem zu prüfen.</div>
+    </div>
+
+    <div class="qq" data-answer="c">
+      <div class="qn"></div>
+      <p class="q">Dieselbe Bewerbung, einmal mit dem Namen „Maximilian“, einmal mit „Kevin“: Die Antworten klingen unterschiedlich. Woran liegt das?</p>
+      <div class="opts">
+        <button type="button" data-a="a">Das Modell mag bestimmte Namen nicht.</button>
+        <button type="button" data-a="b">Reiner Zufall – das hat nichts zu bedeuten.</button>
+        <button type="button" data-a="c">Das Modell gibt Muster aus seinen Trainingstexten wieder – auch Vorurteile.</button>
+      </div>
+      <div class="res">Das Modell hat keine Meinung, es spiegelt, wie in seinen Trainingstexten über Menschen geschrieben wird. Im Bias-Test schließen wir Zufall aus: Beide Antworten entstehen mit identischen Einstellungen.</div>
+    </div>
+
+    <div class="qq" data-answer="a">
+      <div class="qn"></div>
+      <p class="q">Wobei kann ein Sprachmodell im Arbeitsalltag am ehesten entlasten?</p>
+      <div class="opts">
+        <button type="button" data-a="a">Einen Elternbrief in Leichte Sprache umformulieren – mit anschließender Prüfung.</button>
+        <button type="button" data-a="b">Über eine Inobhutnahme entscheiden.</button>
+        <button type="button" data-a="c">Eine rechtliche Stellungnahme ungeprüft übernehmen.</button>
+      </div>
+      <div class="res">Formulieren, Vereinfachen und Übersetzen sind echte Stärken. Entscheidungen über Menschen und ungeprüfte Fachaussagen gehören nicht dazu.</div>
+    </div>
+
+    <div class="qq" data-answer="b">
+      <div class="qn"></div>
+      <p class="q">Eine Fachkraft möchte einen echten Fallbericht mit Namen in einen kostenlosen Online-Chatbot kopieren, um ihn kürzen zu lassen. Was gilt?</p>
+      <div class="opts">
+        <button type="button" data-a="a">Kein Problem, solange sie den Chatverlauf danach löscht.</button>
+        <button type="button" data-a="b">Sozialdaten nur mit Rechtsgrundlage – dafür braucht es freigegebene Systeme und klare Regeln.</button>
+        <button type="button" data-a="c">Erlaubt, weil der Chatbot die Daten ohnehin vergisst.</button>
+      </div>
+      <div class="res">Sozialdaten sind besonders geschützt (§ 35 SGB I, §§ 61 ff. SGB VIII). Leitung kann hier viel bewirken: sichere Werkzeuge bereitstellen und klare Regeln vereinbaren.</div>
+    </div>
+
+    <div class="score">
+      <div class="ring"><div class="inner"><span><b>0</b><small></small></span></div></div>
+      <h3></h3>
+      <p></p>
+      <button type="button" class="again">Nochmal spielen</button>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="prinzip">
+      <small>Das Prinzip</small>
+      <strong>KI formuliert das Wahrscheinliche – nicht automatisch das Wahre.</strong>
+      <p>Ein Sprachmodell hat aus riesigen Textmengen gelernt, welche Wörter typischerweise aufeinander folgen. Es versteht nicht, was es schreibt, und prüft keine Fakten. Es klingt menschlich, weil es menschliche Sprache nachbildet. Fehler sind deshalb keine Lüge, sondern eine Eigenschaft der Technik.</p>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>Stärken und Grenzen</h2>
+    <div class="sg">
+      <div class="plus"><h3>✓ Was gut gelingt</h3><ul>
+        <li>Formulieren und Vereinfachen – Elternbriefe, Leichte Sprache</li>
+        <li>Kurze Alltagstexte übersetzen</li>
+        <li>Zusammenfassen, strukturieren, Ideen sammeln</li></ul></div>
+      <div class="minus"><h3>! Wo Grenzen liegen</h3><ul>
+        <li>Plausible, aber falsche Fakten und Quellen</li>
+        <li>Folgt falschen Annahmen in der Frage</li>
+        <li>Gibt Vorurteile aus Trainingstexten wieder</li>
+        <li>Wissen nur bis zum Trainingsstand</li></ul></div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>Aus unseren Tests</h2>
+    <div class="soft">
+      <p><b>Gleiche Bewerbung um einen Ausbildungsplatz, nur der Vorname ist anders:</b></p>
+      <div class="pair">
+        <div><b>Maximilian</b> · 7/10<br><span class="quote">„… gute Voraussetzungen …“</span></div>
+        <div><b>Kevin</b> · 7/10<br><span class="quote">„… eine genaue Einschätzung ist schwierig.“</span></div>
+      </div>
+      <p style="margin-top:12px">Gleiche Punktzahl, anderer Ton: Vorurteile wirken oft subtil. Keine Absicht – das Modell gibt Muster aus seinen Trainingstexten wieder.</p>
+      <p><b>Veraltet:</b> Gefragt nach der EU-KI-Verordnung, hieß es, sie sei „noch nicht in Kraft“. Das Modell kennt nur den Stand seiner Trainingsdaten.</p>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>Für Ihre Entscheidungen</h2>
+    <ol class="steps">
+      <li><span><b>Ermöglichen statt verbieten:</b> sichere Werkzeuge bereitstellen (lokal oder mit Datenverarbeitung in der EU) – sonst wird privat genutzt.</span></li>
+      <li><span><b>Klare Regel:</b> Sozialdaten nur in freigegebene Systeme; jedes Ergebnis wird fachlich geprüft.</span></li>
+      <li><span><b>Verstehen schützt:</b> Wer weiß, wie Sprachmodelle funktionieren, nutzt sie besser und sicherer.</span></li>
+    </ol>
+  </section>
+
+  <section class="reveal">
+    <h2>Mehr erfahren</h2>
+    <details>
+      <summary>Rechtsrahmen</summary>
+      <ul class="clean">
+        <li>Sozialdaten dürfen nur mit Rechtsgrundlage verarbeitet werden – auch in KI-Diensten (§ 35 SGB I, §§ 61 ff. SGB VIII, DSGVO).</li>
+        <li>Wer KI einsetzt, muss für die KI-Kompetenz des Personals sorgen (Art. 4 KI-Verordnung).</li>
+        <li>Chatbots müssen sich als KI zu erkennen geben (Art. 50 KI-Verordnung).</li>
+      </ul>
+      <p class="small muted">Stand Oktober 2026 · keine Rechtsberatung</p>
+    </details>
+    <details>
+      <summary>Technik dieser Station</summary>
+      <ul class="clean">
+        <li><b>Sprachmodelle:</b> Gemma 3 (12 Mrd. Parameter, Google) und Llama 3.2 (3 Mrd., Meta) – frei verfügbare Modelle</li>
+        <li><b>Spracherkennung:</b> Whisper (OpenAI), Sprachausgabe mit macOS-Stimme</li>
+        <li>Alles läuft lokal auf einem Mac mini – ohne Internet. Gespräche werden nicht gespeichert.</li>
+        <li>Im Bias-Test entstehen beide Antworten mit identischen Einstellungen (gleicher Zufallswert), damit Unterschiede nur vom geänderten Detail kommen.</li>
+      </ul>
+    </details>
+  </section>
+
+  <a class="next st3 reveal" href="station-3.html"><span><small>Weiter</small><strong>Station 3: Mensch gegen Maschine</strong></span><span style="font-size:26px">›</span></a>
+</main>
+
+<footer>Diese Seite setzt keine Cookies und nutzt kein Tracking. · Stand Oktober 2026<!--BUILD--></footer>
+</body>
+</html>

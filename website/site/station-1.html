@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Station 1 „Sehen“: Was erkennt eine Bilder-KI – und wo liegt sie daneben?">
+<meta name="theme-color" content="#0e7c7b">
+<title>Station 1 · „Sehen“ – Was die Maschine sieht</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body class="st1" data-page="1">
+
+<header class="hero" data-big="1">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="index.html"><span data-icon="chip"></span>KI zum Anfassen</a>
+      <button class="share" type="button"></button>
+    </div>
+    <div class="head">
+      <span class="num" data-icon="eye"></span>
+      <div><div class="kicker">Station 1 · „Sehen“</div><h1>Was die Maschine sieht</h1></div>
+    </div>
+    <p class="lead">Was erkennt eine Bilder-KI – und wo liegt sie daneben?</p>
+    <div class="pills">
+      <span class="pill"><span data-icon="clock"></span>5–10 Min.</span>
+      <span class="pill"><span data-icon="people"></span>1–4 Personen</span>
+      <span class="pill"><span data-icon="lock"></span>keine Speicherung</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="reveal">
+    <h2>So geht's</h2>
+    <ol class="steps">
+      <li>Nehmen Sie eine Aufgabenkarte vom Tisch.</li>
+      <li>Legen Sie Gegenstände vor die Kamera und wählen Sie mit einer Zahlentaste einen Modus.</li>
+      <li>Vergleichen Sie: Was „sieht“ die KI – und was sehen Sie?</li>
+    </ol>
+  </section>
+
+  <section class="reveal">
+    <h2>Fünf Modi</h2>
+    <div class="modes">
+      <div><b>1</b>Objekte erkennen</div>
+      <div><b>2</b>Suchbegriffe</div>
+      <div><b>3</b>Bild beschreiben</div>
+      <div><b>4</b>Bildgeschichte</div>
+      <div><b>5</b>Menschen einschätzen</div>
+    </div>
+    <p class="small muted" style="margin-top:10px">Modus 5 ist freiwillig: Wer nicht erfasst werden möchte, bleibt außerhalb des Kamerabilds.</p>
+  </section>
+
+  <section class="reveal quiz" id="quiz">
+    <h2>Quiz: Wie gut ist Ihr Gespür?</h2>
+    <div class="quiz-intro">
+      <span class="badge" data-icon="quiz"></span>
+      <p>Station gerade voll – oder Lust auf mehr? Sechs kurze Fragen. Ihre Antworten bleiben auf Ihrem Handy und werden nicht gespeichert.</p>
+    </div>
+    <div class="progress"><span></span></div>
+    <div class="progress-label"></div>
+
+    <div class="qq" data-answer="b">
+      <div class="qn"></div>
+      <p class="q">Die Kamera zeigt bei einem Gegenstand „Becher 92 %“. Was bedeuten die 92 %?</p>
+      <div class="opts">
+        <button type="button" data-a="a">Es ist zu 92 % sicher ein Becher.</button>
+        <button type="button" data-a="b">Das Bild ähnelt stark dem gelernten Muster „Becher“ – ob es stimmt, sagt die Zahl nicht.</button>
+        <button type="button" data-a="c">92 % der Menschen würden es auch so sehen.</button>
+      </div>
+      <div class="res">Die Zahl beschreibt Ähnlichkeit, nicht Richtigkeit. Auch völlig falsche Zuordnungen können hohe Werte haben.</div>
+    </div>
+
+    <div class="qq" data-answer="c">
+      <div class="qn"></div>
+      <p class="q">Was passiert, wenn das Objektmodell etwas sieht, das es nie gelernt hat – etwa eine Spielzeugpistole?</p>
+      <div class="opts">
+        <button type="button" data-a="a">Es meldet „unbekannter Gegenstand“.</button>
+        <button type="button" data-a="b">Es lernt den neuen Begriff automatisch dazu.</button>
+        <button type="button" data-a="c">Es ordnet ihn dem ähnlichsten bekannten Begriff zu – oder übersieht ihn.</button>
+      </div>
+      <div class="res">Das Modell kennt nur seine 80 gelernten Begriffe und lernt im Einsatz nicht dazu. Alles andere wird irgendwo einsortiert.</div>
+    </div>
+
+    <div class="qq" data-answer="a">
+      <div class="qn"></div>
+      <p class="q">Ein Messer auf dem Teller – dasselbe Messer neben einem Schulranzen. Wer kann zuverlässiger einschätzen, ob die Situation gefährlich ist?</p>
+      <div class="opts">
+        <button type="button" data-a="a">Der Mensch – Gefahr ergibt sich aus dem Zusammenhang.</button>
+        <button type="button" data-a="b">Die KI – sie erkennt das Messer ja sicher.</button>
+        <button type="button" data-a="c">Beide gleich gut.</button>
+      </div>
+      <div class="res">Ein Bildmodell sieht Pixel und Muster. Absicht, Vorgeschichte und Bedeutung einer Situation kennt es nicht.</div>
+    </div>
+
+    <div class="qq" data-answer="b">
+      <div class="qn"></div>
+      <p class="q">Eine Bildbeschreibung lautet: „Eine Person sitzt traurig allein am Tisch.“ Woher „weiß“ die KI, dass die Person traurig ist?</p>
+      <div class="opts">
+        <button type="button" data-a="a">Sie fühlt sich in die Person ein.</button>
+        <button type="button" data-a="b">Ähnliche Bilder waren in den Trainingsdaten oft mit „traurig“ beschrieben.</button>
+        <button type="button" data-a="c">Sie erkennt Gefühle am Gesichtsausdruck zuverlässig.</button>
+      </div>
+      <div class="res">Die Beschreibung entsteht aus gelernten Bild-Text-Mustern. Sie klingt einfühlsam, aber niemand fühlt mit – das ist die Vermenschlichungsfalle.</div>
+    </div>
+
+    <div class="qq" data-answer="a">
+      <div class="qn"></div>
+      <p class="q">Eine Software schätzt das Alter von Menschen anhand ihres Gesichts. Für wen liegt sie meist besonders oft daneben?</p>
+      <div class="opts">
+        <button type="button" data-a="a">Für Gruppen, die in den Trainingsdaten selten vorkommen.</button>
+        <button type="button" data-a="b">Für alle gleich.</button>
+        <button type="button" data-a="c">Nur für Menschen mit Brille.</button>
+      </div>
+      <div class="res">Fehler treffen Gruppen ungleich – etwa Kinder, ältere Menschen oder Menschen mit dunkler Hautfarbe, wenn sie im Training seltener vorkamen. Fragen Sie Anbieter deshalb nach Fehlerquoten je Gruppe.</div>
+    </div>
+
+    <div class="qq" data-answer="c">
+      <div class="qn"></div>
+      <p class="q">Darf eine Schule Software einsetzen, die per Kamera die Gefühle der Schüler:innen auswertet?</p>
+      <div class="opts">
+        <button type="button" data-a="a">Ja, wenn die Eltern zustimmen.</button>
+        <button type="button" data-a="b">Ja, wenn keine Bilder gespeichert werden.</button>
+        <button type="button" data-a="c">Nein – das ist nach der EU-KI-Verordnung grundsätzlich verboten.</button>
+      </div>
+      <div class="res">Emotionserkennung am Arbeitsplatz und in Bildungseinrichtungen ist seit Februar 2025 verboten – außer aus medizinischen oder Sicherheitsgründen (Art. 5 KI-Verordnung).</div>
+    </div>
+
+    <div class="score">
+      <div class="ring"><div class="inner"><span><b>0</b><small></small></span></div></div>
+      <h3></h3>
+      <p></p>
+      <button type="button" class="again">Nochmal spielen</button>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="prinzip">
+      <small>Das Prinzip</small>
+      <strong>KI erkennt Muster – keine Bedeutung.</strong>
+      <p>Bilderkennung hat aus vielen tausend beschrifteten Fotos gelernt, welche Bildmuster zu welchem Begriff passen. Jedes neue Bild wird dem ähnlichsten Muster zugeordnet – auch wenn keines wirklich passt. Was ein Bild <i>bedeutet</i>, ergibt sich erst aus dem Zusammenhang. Den stellt der Mensch her.</p>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>Stärken und Grenzen</h2>
+    <div class="sg">
+      <div class="plus"><h3>✓ Was gut gelingt</h3><ul>
+        <li>Große Bildmengen schnell sortieren</li>
+        <li>Bilder für blinde Menschen beschreiben</li>
+        <li>Dokumente und Formulare erfassen</li></ul></div>
+      <div class="minus"><h3>! Wo Grenzen liegen</h3><ul>
+        <li>Kennt nur, was im Training vorkam</li>
+        <li>Ordnet Unbekanntes trotzdem zu</li>
+        <li>Die Prozentzahl zeigt Ähnlichkeit, nicht Richtigkeit</li>
+        <li>Fehler treffen Gruppen ungleich</li></ul></div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>Aus unseren Tests</h2>
+    <div class="soft">
+      <div class="big80"><span class="val" data-count="80">80</span><p style="margin:0">Begriffe kennt das Objektmodell. Eine <b>Spielzeugpistole</b> oder <b>Spritze</b> gehört nicht dazu – sie wird dem Nächstliegenden zugeordnet oder übersehen.</p></div>
+      <p style="margin-top:14px">Ein Schauspieler aus einem Datensatz mit 21- bis 33-Jährigen wurde auf <b>„~53 Jahre“</b> geschätzt. Und ein Messer wirkt auf dem Teller harmlos – neben dem Schulranzen plötzlich „gefährlich“?</p>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>Für Ihre Entscheidungen</h2>
+    <ol class="steps">
+      <li><span>Fragen Sie Anbieter nach Trainingsdaten und Fehlerquoten – <b>getrennt nach Gruppen</b> wie Alter, Geschlecht, Hautfarbe.</span></li>
+      <li><span>Bilder von Klient:innen sind besonders geschützt. Emotionserkennung am Arbeitsplatz und in Bildungseinrichtungen ist verboten.</span></li>
+      <li><span>Gut eingesetzt entlastet Bilderkennung bei Routinen – <b>Bewertungen über Menschen bleiben menschliche Aufgabe.</b></span></li>
+    </ol>
+  </section>
+
+  <section class="reveal">
+    <h2>Mehr erfahren</h2>
+    <details>
+      <summary>Rechtsrahmen</summary>
+      <ul class="clean">
+        <li>Biometrische Daten sind besonders geschützt (Art. 9 DSGVO).</li>
+        <li>Biometrische KI-Systeme gelten häufig als Hochrisiko-KI (Anhang III KI-Verordnung).</li>
+        <li>Emotionserkennung am Arbeitsplatz und in Bildungseinrichtungen ist verboten, außer aus medizinischen oder Sicherheitsgründen (Art. 5 Abs. 1 lit. f KI-Verordnung).</li>
+      </ul>
+      <p class="small muted">Stand Oktober 2026 · keine Rechtsberatung</p>
+    </details>
+    <details>
+      <summary>Technik dieser Station</summary>
+      <ul class="clean">
+        <li><b>Objekte:</b> YOLO11, trainiert auf dem COCO-Datensatz (rund 120.000 Fotos, 80 Begriffe)</li>
+        <li><b>Suchbegriffe:</b> YOLO-World – findet beliebige vorgegebene Begriffe</li>
+        <li><b>Bildbeschreibung:</b> Gemma 3 (12 Mrd. Parameter, Google, frei verfügbar)</li>
+        <li><b>Gesichter:</b> InsightFace (Alter, Geschlecht), HSEmotion (Emotion)</li>
+        <li>Alles läuft lokal auf einem Laptop mit Grafikkarte – ohne Internet.</li>
+      </ul>
+      <p class="small muted">Quellen: Lin u.a. (2014): Microsoft COCO · Livingstone &amp; Russo (2018): RAVDESS</p>
+    </details>
+  </section>
+
+  <a class="next st2 reveal" href="station-2.html"><span><small>Weiter</small><strong>Station 2: Stresstest für den Chatbot</strong></span><span style="font-size:26px">›</span></a>
+</main>
+
+<footer>Diese Seite setzt keine Cookies und nutzt kein Tracking. · Stand Oktober 2026<!--BUILD--></footer>
+</body>
+</html>
