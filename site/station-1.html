@@ -25,7 +25,7 @@
     <p class="lead">Was erkennt eine Bilder-KI – und wo liegt sie daneben?</p>
     <div class="pills">
       <span class="pill"><span data-icon="clock"></span>5–10 Min.</span>
-      <span class="pill"><span data-icon="people"></span>1–4 Personen</span>
+      <span class="pill"><span data-icon="people"></span>einfach davorstellen</span>
       <span class="pill"><span data-icon="lock"></span>keine Speicherung</span>
     </div>
   </div>
@@ -36,29 +36,28 @@
   <section class="reveal">
     <h2>So geht's</h2>
     <ol class="steps">
-      <li>Nehmen Sie eine Aufgabenkarte vom Tisch.</li>
-      <li>Legen Sie Gegenstände vor die Kamera – gern auch, was Sie dabeihaben: Handy, Schlüssel, Brille. Mit einer Zahlentaste wählen Sie den Modus.</li>
-      <li>Vergleichen Sie: Was „sieht“ die KI – und was sehen Sie?</li>
+      <li>Stellen Sie sich vor den Bildschirm – die Kamera sitzt oben drauf, wie bei einem Spiegel.</li>
+      <li>Halten Sie etwas hoch, das Sie dabeihaben: Handy, Schlüssel, Brille, Glas, Namensschild.</li>
+      <li>Vergleichen Sie links und rechts – und lesen Sie unten, wie die KI das Bild beschreibt.</li>
     </ol>
   </section>
 
   <section class="reveal">
-    <h2>Fünf Modi</h2>
+    <h2>Was Sie auf dem Bildschirm sehen</h2>
     <div class="modes">
-      <div><b>1</b>Objekte erkennen</div>
-      <div><b>2</b>Suchbegriffe</div>
-      <div><b>3</b>Bild beschreiben</div>
-      <div><b>4</b>Bildgeschichte</div>
-      <div><b>5</b>Menschen einschätzen</div>
+      <div><b>L</b>Festes Modell<br><span class="small muted">kennt genau 80 Begriffe</span></div>
+      <div><b>R</b>Gezielte Suche<br><span class="small muted">nach Schlüssel, Brille, Geldbeutel …</span></div>
+      <div><b>↓</b>Bildbeschreibung<br><span class="small muted">alle 20 Sekunden neu</span></div>
+      <div><b>?</b>Button<br><span class="small muted">„Wie alt schätzt mich die KI?“</span></div>
     </div>
-    <p class="small muted" style="margin-top:10px">Modus 5 ist freiwillig: Wer nicht erfasst werden möchte, bleibt außerhalb des Kamerabilds.</p>
+    <p class="small muted" style="margin-top:10px">Alter, Geschlecht und Gefühl werden nur auf Knopfdruck eingeschätzt – 10 Sekunden lang und nur für die vorderste Person. Nichts wird gespeichert.</p>
   </section>
 
   <section class="reveal quiz" id="quiz">
     <h2>Quiz: Wie gut ist Ihr Gespür?</h2>
     <div class="quiz-intro">
       <span class="badge" data-icon="quiz"></span>
-      <p>Station gerade voll – oder Lust auf mehr? Sechs kurze Fragen. Ihre Antworten bleiben auf Ihrem Handy und werden nicht gespeichert.</p>
+      <p>Lust auf mehr? Sechs kurze Fragen. Ihre Antworten bleiben auf Ihrem Handy und werden nicht gespeichert.</p>
     </div>
     <div class="progress"><span></span></div>
     <div class="progress-label"></div>
@@ -163,8 +162,8 @@
   <section class="reveal">
     <h2>Aus unseren Tests</h2>
     <div class="soft">
-      <div class="big80"><span class="val" data-count="80">80</span><p style="margin:0">Begriffe kennt das Objektmodell. Eine <b>Spielzeugpistole</b> oder <b>Spritze</b> gehört nicht dazu – sie wird dem Nächstliegenden zugeordnet oder übersehen.</p></div>
-      <p style="margin-top:14px">Ein Schauspieler aus einem Datensatz mit 21- bis 33-Jährigen wurde auf <b>„~53 Jahre“</b> geschätzt. Und ein Messer wirkt auf dem Teller harmlos – neben dem Federmäppchen plötzlich „gefährlich“?</p>
+      <div class="big80"><span class="val" data-count="80">80</span><p style="margin:0">Begriffe kennt das feste Modell. <b>Handy</b> und <b>Glas</b> gehören dazu – <b>Schlüssel, Brille, Geldbeutel</b> nicht. Die gezielte Suche kann sie finden: Gefunden wird, wonach gesucht wird.</p></div>
+      <p style="margin-top:14px">Ein Schauspieler aus einem Datensatz mit 21- bis 33-Jährigen wurde auf <b>„~53 Jahre“</b> geschätzt.</p>
     </div>
   </section>
 
@@ -191,10 +190,10 @@
     <details>
       <summary>Technik dieser Station</summary>
       <ul class="clean">
-        <li><b>Objekte:</b> YOLO11, trainiert auf dem COCO-Datensatz (rund 120.000 Fotos, 80 Begriffe)</li>
-        <li><b>Suchbegriffe:</b> YOLO-World – findet beliebige vorgegebene Begriffe</li>
+        <li><b>Links:</b> YOLO11, trainiert auf dem COCO-Datensatz (rund 120.000 Fotos, 80 Begriffe)</li>
+        <li><b>Rechts:</b> YOLO-World – findet beliebige vorgegebene Begriffe</li>
         <li><b>Bildbeschreibung:</b> Gemma 3 (12 Mrd. Parameter, Google, frei verfügbar)</li>
-        <li><b>Gesichter:</b> InsightFace (Alter, Geschlecht), HSEmotion (Emotion)</li>
+        <li><b>Button:</b> InsightFace (Alter, Geschlecht), HSEmotion (Emotion) – nur auf Knopfdruck</li>
         <li>Alles läuft lokal auf einem Laptop mit Grafikkarte – ohne Internet.</li>
       </ul>
       <p class="small muted">Quellen: Lin u.a. (2014): Microsoft COCO · Livingstone &amp; Russo (2018): RAVDESS</p>
